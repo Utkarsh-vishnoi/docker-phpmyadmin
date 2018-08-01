@@ -73,6 +73,7 @@ COPY run.sh /run.sh
 
 # We expose phpMyAdmin on port 80
 EXPOSE 80
+EXPOSE 443
 
 ENTRYPOINT [ "/run.sh" ]
 CMD ["supervisord", "-n"]
