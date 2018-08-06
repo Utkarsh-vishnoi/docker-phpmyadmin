@@ -1,7 +1,7 @@
 {
   "request": {
     "hosts": [
-        "docker.ee"
+        "docker.ee",
         "phpmyadmin"
     ],
     "CN": "Utkarsh Docker PHPMyAdmin",
