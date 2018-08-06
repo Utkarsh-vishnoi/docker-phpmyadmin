@@ -74,6 +74,8 @@ COPY phpmyadmin.csr.json /opt/
 # Copy JSON parser
 COPY cfssljson /usr/bin/
 
+RUN chmod +x /usr/bin/cfssljson
+
 # Copy main script
 COPY run.sh /run.sh
 
