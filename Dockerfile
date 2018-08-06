@@ -68,6 +68,12 @@ RUN set -ex; \
 COPY etc /etc/
 COPY php.ini /usr/local/etc/php/conf.d/php-phpmyadmin.ini
 
+# Copy SSL configuration file
+COPY phpmyadmin.csr.json /opt/
+
+# Copy JSON parser
+COPY cfssljson /usr/bin/
+
 # Copy main script
 COPY run.sh /run.sh
 

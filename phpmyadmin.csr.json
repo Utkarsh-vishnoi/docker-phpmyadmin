@@ -1,0 +1,21 @@
+{
+  "request": {
+    "hosts": [
+        "docker.ee"
+        "phpmyadmin"
+    ],
+    "CN": "Utkarsh Docker PHPMyAdmin",
+    "key": {
+        "algo": "rsa",
+        "size": 2048
+    },
+    "names": [
+        {
+            "C": "IN",
+            "L": "Jaspur",
+            "OU": "PHPMyAdmin Docker Server"
+        }
+    ]
+  },
+  "profile": "server"
+}
