@@ -18,7 +18,7 @@ touch /var/log/php-fpm.log
 chown nobody:nogroup /var/log/php-fpm.log
 
 if [ ! -f /etc/ssl/phpmyadmin.pem ]; then
-	curl -d @/opt/phpmyadmin.csr.json cfssl:8888/api/v1/vfssl/newcert | cfssljson phpmyadmin
+	curl -d @/opt/phpmyadmin.csr.json cfssl:8888/api/v1/cfssl/newcert | cfssljson phpmyadmin
 	mv phpmyadmin* /etc/ssl/
 fi
 
