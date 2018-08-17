@@ -2,7 +2,8 @@ FROM php:7.2-fpm-alpine
 
 RUN apk add --no-cache \
     nginx \
-    supervisor
+    supervisor \
+    jq
 
 # Install dependencies
 RUN set -ex; \
